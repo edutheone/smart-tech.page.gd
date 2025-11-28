@@ -1,0 +1,159 @@
+/* ====== Global Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0f1a;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* ====== Container ====== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ====== Header ====== */
+header {
+  background: #111827;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header a:hover,
+header a.active {
+  color: #00aaff;
+}
+
+/* ====== Services Section ====== */
+.services {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #0a0f1a, #111827);
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+.services .intro {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 50px;
+  color: #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== Grid Layout ====== */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ====== Service Cards ====== */
+.service-card {
+  background: #1a2238;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 170, 255, 0.3);
+}
+
+.service-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.service-card h2 {
+  color: #00aaff;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+.service-card a {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff;
+  background: #00aaff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9em;
+  transition: background 0.3s ease;
+}
+
+.service-card a:hover {
+  background: #0088cc;
+}
+
+/* ====== Footer ====== */
+footer {
+  background: #111827;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  color: #888;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ====== Responsive Adjustments ====== */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header a {
+    margin: 8px 0;
+  }
+
+  .services h1 {
+    font-size: 2em;
+  }
+}

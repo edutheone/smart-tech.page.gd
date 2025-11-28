@@ -1,0 +1,212 @@
+/* ---------- Global Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Header & Navigation ---------- */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem 0;
+}
+
+header .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header a:hover,
+header a.active {
+  color: #00b4d8;
+}
+
+header h1 {
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+  color: blueviolet;
+  letter-spacing: 1px;
+}
+
+/* ---------- Hero Section ---------- */
+#hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.4)),
+    url("images/bg.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #00b4d8;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #0096c7;
+  transform: scale(1.05);
+}
+
+/* ---------- About Preview ---------- */
+#about-preview {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+#about-preview h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+#about-preview p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* ---------- Featured Designs ---------- */
+#featured {
+  background: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#featured h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.gallery .item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.gallery h4 {
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.gallery p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ---------- Call to Action (CTA) ---------- */
+#cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #00b4d8;
+  color: #fff;
+}
+
+#cta h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#cta p {
+  font-size: 1.1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 0;
+}
+
+footer a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+  header a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  #about-preview p {
+    font-size: 1rem;
+  }
+}

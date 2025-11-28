@@ -1,0 +1,109 @@
+/* ========== General Page Setup ========== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+  /* Center all content vertically & horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #128c7e;
+}
+
+/* ========== Contact Box ========== */
+.contact {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+}
+.phone{
+    color: #128c7e;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ========== Links ========== */
+a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+/* ========== Social Link Colors ========== */
+.instagram {
+  color: #e4405f;
+}
+
+.instagram:hover {
+  color: #c32a4e;
+}
+
+/* WhatsApp green accent (optional) */
+a[href*="wa.me"] {
+  color: #25d366;
+}
+
+a[href*="wa.me"]:hover {
+  color: #128c7e;
+}
+
+/* ========== Comment Input ========== */
+input[type="text"] {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* ========== Button Styling ========== */
+button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:olivedrab;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  .contact, input[type="text"] {
+    width: 100%;
+  }
+}
